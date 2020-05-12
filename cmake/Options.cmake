@@ -35,7 +35,7 @@ macro(eth_default_option O DEF)
     endif()
 endmacro()
 
-set(MARCH_TYPE "-march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden")
+set(MARCH_TYPE "-march=armv8.2-a -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden")
 
 macro(configure_project)
      set(NAME ${PROJECT_NAME})

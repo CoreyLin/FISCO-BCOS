@@ -27,7 +27,7 @@ elseif(CORES GREATER 2)
   set(CORES 2)
 endif()
 
-set(BOOST_CXXFLAGS "cxxflags=-march=x86-64 -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden")
+set(BOOST_CXXFLAGS "cxxflags=-march=armv8.2-a -mtune=generic -fvisibility=hidden -fvisibility-inlines-hidden")
 
 if (APPLE)
     set(SED_CMMAND sed -i .bkp)
