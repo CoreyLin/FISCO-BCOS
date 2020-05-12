@@ -42,8 +42,8 @@ ExternalProject_Add(jsoncpp
                ${_only_release_configuration}
                -DJSONCPP_WITH_TESTS=OFF
                -DJSONCPP_WITH_PKGCONFIG_SUPPORT=OFF
-               	# -DCMAKE_C_FLAGS=-Wa,-march=generic64
-               	# -DCMAKE_CXX_FLAGS=-Wa,-march=generic64
+               	# -DCMAKE_C_FLAGS=-Wa,-march=armv8.2-a
+               	# -DCMAKE_CXX_FLAGS=-Wa,-march=armv8.2-a
                	-DCMAKE_C_COMPILER=${CMAKE_C_COMPILER}
         		-DCMAKE_CXX_COMPILER=${CMAKE_CXX_COMPILER}
     LOG_CONFIGURE 1
